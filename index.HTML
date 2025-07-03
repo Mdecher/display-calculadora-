@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Calculadora</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="Calculadora">
+    <div class="display" id="display">0</div>
+    <div class="buttons">
+      <button onclick="limparDisplay()">C</button>
+      <button onclick="lerOperador('/')">÷</button>
+      <button onclick="lerOperador('*')">×</button>
+      <button onclick="excluirUltimo()">⌫</button>
+
+      <button onclick="anexarNumero('7')">7</button>
+      <button onclick="anexarNumero('8')">8</button>
+      <button onclick="anexarNumero('9')">9</button>
+      <button onclick="lerOperador('-')">−</button>
+
+      <button onclick="anexarNumero('4')">4</button>
+      <button onclick="anexarNumero('5')">5</button>
+      <button onclick="anexarNumero('6')">6</button>
+      <button onclick="lerOperador('+')">+</button>
+
+      <button onclick="anexarNumero('1')">1</button>
+      <button onclick="anexarNumero('2')">2</button>
+      <button onclick="anexarNumero('3')">3</button>
+      <button class="equals" onclick="calculate()">=</button>
+
+      <button class="zero" onclick="anexarNumero('0')">0</button>
+      <button onclick="anexarNumero('.')">.</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
